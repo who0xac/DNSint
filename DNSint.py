@@ -860,7 +860,7 @@ def count_spf_lookups(spf_record: str, domain: str, timeout: int, depth: int = 0
     
     lookup_count = 0
     
-    mechanisms = re.findall(r'\b(a|mx|ptr|exists):?([^\s]*)', spf_record, re.IGNORECASE)
+    mechanisms = re.findall(r'(?<!\S)(?:[-~+?])?(a(?!ll)\b|mx\b|ptr\b|exists\b)(?::([^\s]+))?', spf_record, re.IGNORECASE)
     lookup_count += len(mechanisms)
     
     includes = re.findall(r'include:([^\s]+)', spf_record, re.IGNORECASE)
