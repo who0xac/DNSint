@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-DNSint v1 - DNS Intelligence Toolkit
+DNSint v1.1 - DNS Intelligence Toolkit
 A professional DNS reconnaissance and OSINT tool for comprehensive domain analysis
 Created by wh0xac
 """
@@ -73,7 +73,7 @@ def print_banner():
 [bold cyan]     ▐▙▄▄▀ ▐▌  ▐▌▗▄▄▞▘  [/bold cyan][bold white]int[/bold white]
 
 [bold cyan]    ═══════════════════════════════ [/bold cyan]
-[bold yellow]    v1.0, by wh0xac                                [/bold yellow]
+[bold yellow]    v1.1, by wh0xac                                [/bold yellow]
 """
     
     console.print(banner)
